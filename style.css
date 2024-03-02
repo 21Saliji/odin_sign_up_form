@@ -1,0 +1,81 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Default font */
+}
+
+/* Background image styles */
+.background-image {
+    background-image: url('path/to/background-image.jpg');
+    background-size: cover;
+    /* Other background styles */
+}
+
+/* Form container styles */
+.form-container {
+    max-width: 800px;
+    /* Adjust according to your design */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Logo styles */
+.logo {
+    font-family: 'Roboto', sans-serif;
+    /* Use your selected font */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Image sidebar styles */
+.image-sidebar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Signup form styles */
+.signup-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E5E7EB;
+    /* Light border */
+    border-radius: 5px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #596D48;
+    /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #445735;
+    /* Darker button color on hover */
+}
+
+/* Add additional styles and media queries as needed */
