@@ -1,17 +1,33 @@
-// // JavaScript validation for password matching
-// const form = document.getElementById('signup-form');
+document.addEventListener('DOMContentLoaded', function () {
+    const passwordInput = document.getElementById('passW');
+    const confirmPasswordInput = document.getElementById('passC');
+    const errorElement = document.getElementById('error');
 
-// form.addEventListener('submit', function(event) {
-//     event.preventDefault();
+    function validatePassword() {
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
 
-//     const password = form.querySelector('input[name="password"]').value;
-//     const confirm_password = form.querySelector('input[name="confirm_password"]').value;
+        if (password.length < 8) {
+            errorElement.textContent = 'Password must be at least 8 characters long';
+            return false;
+        }
 
-//     if (password !== confirm_password) {
-//         alert("Passwords do not match!");
-//         return;
-//     }
+        if (password !== confirmPassword) {
+            errorElement.textContent = 'Passwords do not match';
+            return false;
+        }
 
-//     // Submit the form if passwords match
-//     form.submit();
-// });
+        errorElement.textContent = '';
+        return true;
+    }
+
+    function validateForm(event) {
+        if (!validatePassword()) {
+            event.preventDefault(); // Prevent form submission if validation fails
+        }
+    }
+
+    // Validate password when form is submitted
+    const form = document.querySelector('form');
+    form.addEventListener('submit', validateForm);
+});

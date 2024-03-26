@@ -1,17 +1,152 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+  }
+  
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left{
+    background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
+    width: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    width: 65vw;
+}
+
+.first{
+height: 25vh; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.second{
+    background-color: white;
+    height: 33vh;
+    align-items: center;
+    box-shadow: 2px 5px #e5e7eb ;
+}
+
+.form-main-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+
+input{
+    width: 200px;
+    border: 1px solid #e5e7eb;
+    height: 25px;
+    border-radius: 5px;
+  }
+
+  input:focus{
+    border: 1px solid blue;
+  }
+
+
+
+  input:invalid{
+    border: 1px solid red;
+  }
+
+  label{
+    font-size: 10px;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  #error{
+    color: red;
+    font-size: 10px;
+    margin: 0;
+  }
+
+.third{
+    margin-left: 50px;
+    margin-top: 25px;
+}
 button {
     cursor: pointer;
-    text-align: center;
-    background-color: green;
+    background-color:#596D48;
+    border: 1px solid #596D48;
     border-radius: 10px;
-    padding: 10px 60px;
+    height: 40px;
+    width: 175px;
     box-shadow: none;
-    border-color: transparent;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 a {
-    color: green;
+    color:#596D48;
     text-decoration: none;
     font-weight: bold;
+}
+
+.footer{
+    color: white;
+}
+
+.p-footer{
+    font-size: 12px;
+    /* text-align: center; */
+}
+
+.forImage{
+    height: 48vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.forFooter{
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.semi-transparent{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: Norse-Bold, sans-serif;
+}
+
+h1{
+    font-size:65px;
 }

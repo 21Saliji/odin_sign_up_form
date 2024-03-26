@@ -11,50 +11,71 @@
 </head>
 
 <body>
-    <main class="background">
-        <p>
-            This is not a real online service! You know you need something
-            <br>like this in your life to help you realize your deepest dreams.
-            <br>Sign up <i>now</i> to get started.
-            <br>
-            <br>You <i>know</i> you want to.
-        </p>
-        <div class="container">
-            <form>
-                <h1>Let's do this!</h1>
-                <div class="first">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="fname">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" name="lname">
+    <div class="main">
+        <div class="left">
+            <div class="forImage">
+                <div class="semi-transparent">
+                    <img src="./images/odin-lined.png" alt="odin logo" height="100px">
+                    <h1>Odin</h1>
                 </div>
-                <br>
-                <br>
-                <div class="second">
-                    <label for="email">EMAIL</label><br>
-                    <input type="text" id="email" email="email"><br>
-                    <label for="no.">PHONE NUMBER</label><br>
-                    <input type="text" id="no." phone_number="no."><br>
-
-                </div>
-                <br>
-                <br>
-                <div class="input-group">
-                    <label for="passW">PASSWORD</label><br>
-                    <input type="password" id="passW" name="passW"><br>
-                    <label for="passC">CONFIRM PASSWORD</label><br>
-                    <input type="password" id="passC" name="confirm_password"><br>
-                    <div class="error"></div>
-                </div>
-            </form>
-            <br>
-            <br>
-            <button type="submit">Create Account</button>
-            <br>
-            <br>
-            <p>Already have an account? <a href="url">Log in</a></p>
+            </div>
+            <div class="forFooter">
+                <p class="p-footer">Photo by <a class="footer" href="unsplash.com">Matie West</a> on <a class="footer" href="unsplash.com">Unsplash</a></p>
+            </div>
         </div>
-    </main>
+        <div class="right">
+            <div class="first">
+                <h3>
+                        This is not a real online service! You know you need something
+                        <br>like this in your life to help you realize your deepest dreams.
+                        <br>Sign up <i>now</i> to get started.
+                        <br>
+                        <br>You <i>know</i> you want to.
+                </h3>
+                </div>
+                <form action="" method="get">
+                    <div class="second">
+                    <h3 style="margin-left: 50px; padding-top: 10px;">Let's do this!</h3>
+                    <div class="form-main-div">
+                        <div class="form-divs">
+                            <div  class="form-div">
+                                <label for="fname">FIRST NAME</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                            </div>
+                                <div class="form-div">
+                                <label for="email">EMAIL</label><br>
+                                <input type="email" id="email" email="email"><br>
+                            </div>
+                                <div class="form-div">
+                                <label for="passW">PASSWORD</label><br>
+                            <input type="password" id="passW" name="passW" required><br>
+                            <p id="error"></p>
+                            </div>
+                        </div>
+                        <div class="form-divs">
+                                <div class="form-div">
+                                    <label for="lname">LAST NAME</label><br>
+                                    <input type="text" id="lname" name="lname"><br>
+                                </div>
+                                <div class="form-div">
+                                    <label for="no.">PHONE NUMBER</label><br>
+                                    <input type="tel" id="phoneNum" phone_number="phoneNum"><br>
+                                </div>
+                                <div class="form-div">
+                                    <label for="passC">CONFIRM PASSWORD</label><br>
+                                    <input type="password" id="passC" name="passC" required><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <button type="submit">Create Account</button>
+                        <br>
+                        <p>Already have an account? <a href="url">Log in</a></p>
+                    </div>
+             </form>
+        </div>
+    </div>
 </body>
 
 </html>
